@@ -214,17 +214,19 @@
 		<div class="wrapper">
 			<div class="title animated wow fadeIn">
 				<h2>Careers</h2>
-				<h3 style="font-family: raleway-regular;">leave your information here so we can get to know you better</h3>
+				<h3 style="font-family: raleway-regular;">help us on our mission to reinvent the invented</h3>
 				<hr class="separator">
 			</div>
             <br>
             <center>
-					<input type="text" placeholder="Name..."><br><br>
-					<input type="text" placeholder="Email..."><br><br>
-					<input type="text" placeholder="Phone Number..."><br><br>
-                <textarea placeholder="Tell us a little about yourself..."></textarea><br><br>
-                <textarea placeholder="What are you good at?..."></textarea><br><br>
-                <button>Submit</button>
+							<form method="POST" action="http://formspree.io/ceo@socifyinc.com"id="career_form">
+							<input type="text" name="fullname" placeholder="Full Name..."><br><br>
+							<input type="text" name="email" placeholder="Email..."><br><br>
+							<input type="text" name="phonenumber" placeholder="Phone Number..."><br><br>
+							<input type="text" name="field" placeholder="What field do you specialize in? (Business, Marketing, Technology, etc.)"><br><br>
+                <textarea form="career_form" name="bio" placeholder="Tell us a little about yourself..."></textarea><br><br>
+                <button type="submit">Submit</button>
+							</form>
             </center>
                 <br><br>
                 <!--<li class="animated wow fadeInDown" data-wow-delay=".6s" style="margin-left: 35%; position: relative; top: 20px;">
@@ -242,7 +244,7 @@
 			</ul>
 		</div>
 	</section>
-    
+
     <style>
         .title h2 {
             color: #616161;
@@ -252,7 +254,7 @@
             margin: 0 0 20px 0;
             text-transform: uppercase;
         }
-        
+
         input {
             height: 40px;
             width: 50%;
@@ -262,7 +264,7 @@
             border: 1px solid #E0E0E0;
             border-radius: 2px;
         }
-        
+
         textarea {
             height: 80px;
             width: 50%;
@@ -273,7 +275,7 @@
             border: 1px solid #E0E0E0;
             border-radius: 2px;
         }
-        
+
         button {
             height: 35px;
             width: 70px;
@@ -285,9 +287,9 @@
             border-radius: 2px;
             font-size: 15px;
         }
-        
+
     </style>
-    
+
 	<footer>
 		<div class="wrapper">
 			<div class="rights">
